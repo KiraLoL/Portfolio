@@ -1,0 +1,391 @@
+/*HTML BODY ETC*/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', cursive;
+}
+body {
+    position: relative;
+}
+p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.icon-menu-close {
+    display: none;
+}
+* {
+    box-sizing: border-box;
+}
+h3 {
+    text-transform: uppercase;
+}
+a {
+    transition: all 0.3s ease;
+}
+.icon-close {
+    display: none;
+}
+.icon-menu {
+    display: none;
+}
+/*Sectioning*/
+#expertise {  
+}
+#projects {
+}
+#about {
+}
+/*Header/Nav*/
+.toggle-nav {
+    display: none;
+}
+header {
+    background-color: #272727;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header li {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 20px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header a:hover {
+    color: rgba(92,200,243);
+    text-decoration: none;
+}
+/*Jumbotron*/
+.jumbotron {
+    background: linear-gradient(
+    rgba(0,255,0,0.45),
+    rgba(92,200,243,0.45)
+    ), url(../Images/jumbo.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.jumbotron .container h1 {
+    color: white;
+    font-weight: 600;
+}
+.jumbotron .container h2 {
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.jumbotron .container{
+    text-align: center;
+}
+.center a {
+    color: white;
+}
+.btn {
+    background-color: rgba(92,200,243,0.45);
+    color: white;
+    padding: 20px 35px;
+    border: 1px solid white;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: rgba(195,47,52,0.45);
+    color: white;
+    transition:  all 3s ease;
+}
+/*Expertise*/
+.expertise {
+    text-align: center;
+    background: white;
+}
+
+.expertise h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+.expertise h3 {
+    margin: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.expertise .header {
+    display: block;
+    width: 49%;
+    margin-left: 25.4902%;
+    padding-top: 30px;
+}
+.expertise .header p {
+    font-size: 20px;
+}
+/*Projects*/
+        .projects {
+    text-align: center;
+    background: #F3F3F3;
+    margin-top: 35px;
+}
+.projects .text {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.projects h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.projects p {
+    font-size: 20px;
+}
+.projects img {
+    padding: 0;
+    border: none;
+    margin-bottom: 35px;
+    width: auto;
+    height: 250px;
+}
+/*About*/
+.about .text {
+    width: 49%;
+    margin-left: 25.4902%;
+    text-align: center;
+}
+.about h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.about p {
+    font-size: 18px;
+}
+/*Footer*/
+footer {
+    background: #272727;
+    text-align: left;
+    color: white;
+}
+footer h4 {
+    text-transform: none;
+}
+footer p {
+    font-size: 20px;
+}
+.copy {
+    float: right;
+    margin: 30px 0;
+    display: hide;
+}
+footer .left {
+    float: left;
+    margin: 30px 0;
+    width: 49%;
+}
+footer .right {
+    float: right;
+    margin: 30px 0;
+    width: 49%;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(92,200,243);
+    font-size: 20px;
+    font-weight: 600;
+}
+footer .right img {
+    width: 50px;
+    height: 50px;
+}
+footer .linked img {
+    margin-left: 20px;
+    width: 125px;
+    background-color: #272727;
+}
+footer .light {
+    font-weight: 200;
+}
+footer .right a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+footer .git {
+    margin-left: 20px;
+    background-color: #272727;
+}
+/*Animation*/
+.jumbotron h1
+    {
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 1s;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+}
+@keyframes example {
+    from {
+        opacity: 0;
+        -webkit-transform: translatex(-2000px);
+}
+to {
+    -webkit-transform: translateY(0);
+}
+}
+.jumbotron h2
+    {
+    -webkit-animation-name: example1;
+    -webkit-animation-duration: 1s;
+    animation-name: example1;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+}
+@keyframes example1 {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+}
+to {
+    -webkit-transform: translateY(0);
+}
+}
+.jumbotron .btn
+    {
+    -webkit-animation-name: example2;
+    -webkit-animation-duration: 1s;
+    animation-name: example2;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+}
+@keyframes example2 {
+    from {
+        opacity: 0;
+        -webkit-transform: translatex(2000px);
+}
+to {
+    -webkit-transform: translateY(0);
+}
+}
+
+/*Transitions*/
+
+/*Media Query*/
+
+/*----- Toggle Button -----*/
+.toggle-nav {
+    display:none;
+}
+ 
+/*----- Menu -----*/
+
+ 
+/*----- Responsive -----*/
+ 
+@media only screen and (max-width: 1000px) {
+    .menu {
+  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+  left: -155px;
+  position: fixed;
+  width: 155px;
+        height: 100%;
+        overflow-y: auto;
+}
+    .menu ul {
+  border-top: 1px solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+    display: block;
+    height: 150px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 140px;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+}
+
+.icon-menu {
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+    display: block;
+    font-size: 55px;
+    float: right;
+    margin-right: 25px;
+}
+.icon-menu-close {
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+    display: block;
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+    .close {
+        font-size: 150px;
+    }
+    .icon-menu a {
+        color: black;
+    }
+    header {
+        background-color: transparent;
+    }
+    .expertise .col-md-6 {
+        border-bottom: 1px solid black;
+        margin-top: 20px;
+    }
+}
+ 
+/*Weird shit*/
